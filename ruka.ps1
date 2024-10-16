@@ -1478,3 +1478,6 @@ if ($option -eq 3){
 
     gpupdate /force
 }
+if ($option -eq 4){
+    Get-ChildItem -Path "C:\Users" -Recurse -Include *.mp3, *.mov, *.mp4, *.avi, *.mpg, *.mpeg, *.flac, *.m4a, *.flv, *.ogg, *.gif, *.png, *.jpg, *.jpeg, *.pdf, *.doc, *.docx, *.txt | Select-Object FullName
+}
